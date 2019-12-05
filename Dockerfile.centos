@@ -1,0 +1,25 @@
+FROM centos:centos7
+MAINTAINER voovode@gmail.com
+
+RUN yum -y update && yum -y groupinstall 'Development Tools' && yum -y install \
+    libcurl-devel \
+	expat-devel \
+	gmp-devel \
+	libjpeg-turbo-devel \
+	libdbi-dbd-mysql \
+    openssl-devel \
+    libevent-devel \
+    libffi-devel \
+    glib2-devel \
+    libjpeg-devel \
+    libxml2-devel \
+    libxslt-devel \
+    zlib-devel \
+    libyaml-devel \
+	zip unzip \
+    wget \
+    tar \
+    patch \
+	tree \
+    && yum clean all
+
