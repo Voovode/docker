@@ -3,10 +3,10 @@ MAINTAINER voovode@gmail.com
 
 RUN yum -y update && yum -y groupinstall 'Development Tools' && yum -y install \
     libcurl-devel \
-	expat-devel \
-	gmp-devel \
-	libjpeg-turbo-devel \
-	libdbi-dbd-mysql \
+    expat-devel \
+    gmp-devel \
+    libjpeg-turbo-devel \
+    libdbi-dbd-mysql \
     openssl-devel \
     libevent-devel \
     libffi-devel \
@@ -16,10 +16,10 @@ RUN yum -y update && yum -y groupinstall 'Development Tools' && yum -y install \
     libxslt-devel \
     zlib-devel \
     libyaml-devel \
-	zip unzip \
+    zip unzip \
     wget \
     tar \
     patch \
-	tree \
+    tree \
     && yum clean all
 
